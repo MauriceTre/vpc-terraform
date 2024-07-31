@@ -36,7 +36,7 @@ jobs:
         run: terraform init
 
       - name: Terraform planen
-        run: terrafarm plan
+        run: terraform plan
 
       - name: Terraform formatieren
         run: terraform fmt
