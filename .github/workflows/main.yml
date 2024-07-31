@@ -30,17 +30,18 @@ jobs:
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.4.6
-      # Terraform init und apply
+      
+          # Terraform init und apply
       - name: Terraform ausführen
         run: terraform init
 
-      - name: Terraform ausführen
+      - name: Terraform planen
         run: terrafarm plan
 
-      - name: Terraform ausführen
+      - name: Terraform formatieren
         run: terraform fmt
 
-      - name: Terraform ausführen
+      - name: Terraform validieren
         run: terraform validate
 
       - name: Terraform ausführen
