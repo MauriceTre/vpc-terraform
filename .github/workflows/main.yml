@@ -35,14 +35,14 @@ jobs:
       - name: Terraform ausführen
         run: terraform init
 
-      - name: Terraform planen
-        run: terraform plan
-
       - name: Terraform formatieren
         run: terraform fmt --check
 
       - name: Terraform validieren
         run: terraform validate
+      
+      - name: Terraform planen
+        run: terraform plan
 
       - name: Terraform ausführen
         run: terraform apply -auto-approve
