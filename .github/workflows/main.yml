@@ -31,7 +31,7 @@ jobs:
         with:
           terraform_version: 1.9.3
       
-          # Terraform init und apply
+      # Terraform init und apply
       - name: Terraform ausführen
         run: terraform init
 
@@ -39,7 +39,7 @@ jobs:
         run: terraform plan
 
       - name: Terraform formatieren
-        run: terraform fmt
+        run: terraform fmt --check
 
       - name: Terraform validieren
         run: terraform validate
